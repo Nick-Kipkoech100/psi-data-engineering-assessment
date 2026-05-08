@@ -76,7 +76,14 @@ python pipeline.py
 - Anti joins were used to isolate orphaned order items.
 - Negative amounts were flagged instead of dropped to preserve anomalies.
 
----
+--- 
+## Tasks Completed
+- ✅ Task 1: Data ingestion & schema enforcement
+- ✅ Task 2: Data quality & cleaning  
+- ✅ Task 3: Joins & enrichment
+- ✅ Task 4: Aggregations & window functions
+- ⏳ Task 5: Return analysis — not completed due to time constraints
+- ⏳ Task 6: Output & partitioning — not completed due to time constraints
 
 ## Known Limitations
 
@@ -85,6 +92,8 @@ Due to time constraints, Task 5 and Task 6 were partially implemented. The inten
 - Refund anomaly detection
 - Parquet partitioned outputs
 - Additional data quality gates
+-  The `generate_data.py` script was provided with the assessment and is not included in this repo.
+- Pipeline was tested on Google Colab with PySpark 3.x.
 
 ---
 
