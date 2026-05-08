@@ -76,6 +76,17 @@ python pipeline.py
 - Anti joins were used to isolate orphaned order items.
 - Negative amounts were flagged instead of dropped to preserve anomalies.
 
+   ## Code Structure
+The pipeline is implemented as a single `pipeline.py` file developed and tested 
+on Google Colab. Each logical stage is clearly separated by comments:
+- Ingestion
+- Cleaning
+- Enrichment  
+- Analytics
+
+Due to time constraints, a modular multi-file structure was not implemented. 
+In production, each stage would be separated into its own module.
+
 --- 
 ## Tasks Completed
 - ✅ Task 1: Data ingestion & schema enforcement
